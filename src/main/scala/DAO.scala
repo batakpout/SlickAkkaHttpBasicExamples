@@ -100,7 +100,9 @@ abstract class BaseRepository[T <: BaseTable[E], E <: BaseEntity :    ClassTag](
   }
 
   def deleteById(id: Long): Future[Int] = {
+    println("git diff file")
     db.run(deleteByIdQuery(id))
+
   }
 
 }

@@ -10,8 +10,10 @@ abstract class EmployeeRepository
 
   // Employee(0L, "aamir", false)
 
-  def insertItem(row: Employee) = {
-    super.save(row)
+  def insertItem(row: Employee): Future[Employee] = {
+    val res = super.save(row)
+    res.map(x => println(x + ">>>>>>>>>>>>>>>>>"))
+    res
   }
 
   def getEmployees = {

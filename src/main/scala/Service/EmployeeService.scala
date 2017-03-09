@@ -6,6 +6,6 @@ import Utilities.EmployeeRepository
 
 class EmployeeService(repository: EmployeeRepository) extends BaseActor {
   receiver {
-    case e: Employee => repository.insertItem(e)
+    case e: Employee => sender ! repository.insertItem(e)
   }
 }

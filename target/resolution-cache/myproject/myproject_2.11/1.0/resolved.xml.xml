@@ -4,7 +4,7 @@
 		module="myproject_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20170127155159"
+		publication="20170309103643"
 	>
 		<description>
 		MyProject
@@ -35,7 +35,12 @@
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.7" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.11.7" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="com.typesafe.slick" name="slick_2.11" rev="3.2.0-M1" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-stream-experimental_2.11" rev="1.0" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-http-core-experimental_2.11" rev="1.0" conf="compile->default(compile)"/>
 		<dependency org="org.postgresql" name="postgresql" rev="9.4.1211" conf="compile->default(compile)"/>
 		<dependency org="org.slf4j" name="slf4j-log4j12" rev="1.7.22" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-http-experimental_2.11" rev="1.0" conf="compile->default(compile)"/>
+		<dependency org="org.json4s" name="json4s-jackson_2.11" rev="3.2.11" conf="compile->default(compile)"/>
+		<dependency org="joda-time" name="joda-time" rev="2.8.2" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

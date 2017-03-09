@@ -1,8 +1,9 @@
 package rest
 
+import Controllers.EmployeeControllerComponent
 import Entities.Employee
 import Utilities.ImplEmployeeRepository
-import akka.actor.ActorSystem
+import akka.actor.{ActorRef, ActorSystem}
 import akka.http.scaladsl.model.{HttpEntity, HttpResponse, MediaTypes, StatusCodes}
 import akka.http.scaladsl.server.Directives
 import akka.stream.ActorMaterializer
@@ -11,7 +12,7 @@ import org.json4s.jackson.JsonMethods._
 
 import scala.concurrent.ExecutionContext.Implicits.global
 
-class EmployeeRest extends Directives {
+class EmployeeRest(actorRef: ActorRef, controller: EmployeeControllerComponent) extends Directives {
   implicit val system = ActorSystem.create("Test")
   implicit val materializer = ActorMaterializer()
 
@@ -20,8 +21,7 @@ class EmployeeRest extends Directives {
     post {
       entity(as[String]) { data =>
         complete {
-          val dd = parse(data).extract[Employee]
-          ImplEmployeeRepository.insertItem(dd).map { result =>
+          controller.insertEmployeeController(actorRef, data).map { result =>
             HttpResponse(status = StatusCodes.OK, entity = HttpEntity(MediaTypes.`application/json`, compact(Extraction.decompose(result))))
           }
         }

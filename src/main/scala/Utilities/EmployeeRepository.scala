@@ -29,21 +29,10 @@ abstract class EmployeeRepository
   def getEmployeeByName(name: String): Future[Seq[Employee]] = {
     for {
       employees <- super.getAll
-      result = employees.filter(_.firstName == name)
+      result = employees.filter(_.firstName.equalsIgnoreCase(name))
     } yield result
   }
 
 }
 
 object ImplEmployeeRepository extends EmployeeRepository
-
-/*
-object xx extends App {
-  println("hello")
-
-  for {
-    result <- ImplEmployeeRepository.insertItem(ImplEmployeeRepository.emp)
-    _ = println(result)
-  } yield result
-  Thread.sleep(50000)
-}*/

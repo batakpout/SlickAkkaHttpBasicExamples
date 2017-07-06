@@ -67,8 +67,7 @@ trait BaseRepositoryQuery[T <: BaseTable[E], E <: BaseEntity] {
 }
 
 abstract class BaseRepository[T <: BaseTable[E], E <: BaseEntity :    ClassTag](clazz: TableQuery[T])
-  extends BaseRepositoryQuery[T, E]
-    with BaseRepositoryComponent[T, E] {
+  extends BaseRepositoryQuery[T, E] with BaseRepositoryComponent[T, E] {
   val clazzTable: TableQuery[T] = clazz
   lazy val clazzEntity = classTag[E].runtimeClass
   val query: slick.jdbc.PostgresProfile.api.type#TableQuery[T] = clazz

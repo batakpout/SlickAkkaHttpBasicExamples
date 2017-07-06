@@ -21,7 +21,7 @@ trait EmployeeRestService extends RouteConcatenation with CORSSupport with Emplo
 }
 
 trait RestEndCollection extends EmployeeRestService {
-  val availableRoutes = cors(routes)
+  val availableRoutes: Route = cors(routes)
 }
 
 object Boot extends App with RestEndCollection {

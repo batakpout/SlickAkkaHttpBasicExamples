@@ -1,20 +1,20 @@
-[info] Updating {file:/home/aamir/Sources/SlickBasicExamples/project/}slickbasicexamples-build...
-[debug] :: resolving dependencies :: default#slickbasicexamples-build;0.1-SNAPSHOT
+[info] Updating {file:/home/aamir/IntW/SlickAkkaHttpBasicExamples/project/}slickakkahttpbasicexamples-build...
+[debug] :: resolving dependencies :: default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT
 [debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
 [debug] 	validate = true
 [debug] 	refresh = false
 [debug] resolving dependencies for configuration 'compile'
-[debug] == resolving dependencies for default#slickbasicexamples-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT [compile]
 [debug] resolving dependencies for configuration 'runtime'
-[debug] == resolving dependencies for default#slickbasicexamples-build;0.1-SNAPSHOT [runtime]
-[debug] == resolving dependencies for default#slickbasicexamples-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT [compile]
 [debug] resolving dependencies for configuration 'test'
-[debug] == resolving dependencies for default#slickbasicexamples-build;0.1-SNAPSHOT [test]
-[debug] == resolving dependencies for default#slickbasicexamples-build;0.1-SNAPSHOT [runtime]
-[debug] == resolving dependencies for default#slickbasicexamples-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT [test]
+[debug] == resolving dependencies for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT [compile]
 [debug] resolving dependencies for configuration 'provided'
-[debug] == resolving dependencies for default#slickbasicexamples-build;0.1-SNAPSHOT [provided]
-[debug] == resolving dependencies default#slickbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->default(compile)]
+[debug] == resolving dependencies for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT [provided]
+[debug] == resolving dependencies default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
 [info] Resolving org.scala-lang#scala-library;2.10.6 ...
@@ -22,10 +22,10 @@
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.6
 [debug] 	found org.scala-lang#scala-library;2.10.6 in sbt-chain
 [debug] 	[2.10.6] org.scala-lang#scala-library;2.10.6
-[debug] == resolving dependencies default#slickbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->runtime]
-[debug] == resolving dependencies default#slickbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->compile]
-[debug] == resolving dependencies default#slickbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->master]
-[debug] == resolving dependencies default#slickbasicexamples-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.13 [provided->default(compile)]
+[debug] == resolving dependencies default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->runtime]
+[debug] == resolving dependencies default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->compile]
+[debug] == resolving dependencies default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->master]
+[debug] == resolving dependencies default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.13 [provided->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
 [info] Resolving org.scala-sbt#sbt;0.13.13 ...
@@ -1835,13 +1835,13 @@
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {provided=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {provided=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}
 [debug] resolving dependencies for configuration 'optional'
-[debug] == resolving dependencies for default#slickbasicexamples-build;0.1-SNAPSHOT [optional]
+[debug] == resolving dependencies for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT [optional]
 [debug] resolving dependencies for configuration 'compile-internal'
-[debug] == resolving dependencies for default#slickbasicexamples-build;0.1-SNAPSHOT [compile-internal]
-[debug] == resolving dependencies for default#slickbasicexamples-build;0.1-SNAPSHOT [compile]
-[debug] == resolving dependencies for default#slickbasicexamples-build;0.1-SNAPSHOT [optional]
-[debug] == resolving dependencies for default#slickbasicexamples-build;0.1-SNAPSHOT [provided]
-[debug] == resolving dependencies default#slickbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->default(compile)]
+[debug] == resolving dependencies for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT [compile-internal]
+[debug] == resolving dependencies for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT [optional]
+[debug] == resolving dependencies for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT [provided]
+[debug] == resolving dependencies default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
@@ -1850,10 +1850,10 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
-[debug] == resolving dependencies default#slickbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->runtime]
-[debug] == resolving dependencies default#slickbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->compile]
-[debug] == resolving dependencies default#slickbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->master]
-[debug] == resolving dependencies default#slickbasicexamples-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.13 [provided->default(compile)]
+[debug] == resolving dependencies default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->runtime]
+[debug] == resolving dependencies default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->compile]
+[debug] == resolving dependencies default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->master]
+[debug] == resolving dependencies default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.13 [provided->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
@@ -3746,18 +3746,18 @@
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {provided=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {provided=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}
 [debug] resolving dependencies for configuration 'runtime-internal'
-[debug] == resolving dependencies for default#slickbasicexamples-build;0.1-SNAPSHOT [runtime-internal]
-[debug] == resolving dependencies for default#slickbasicexamples-build;0.1-SNAPSHOT [runtime]
-[debug] == resolving dependencies for default#slickbasicexamples-build;0.1-SNAPSHOT [compile]
-[debug] == resolving dependencies for default#slickbasicexamples-build;0.1-SNAPSHOT [optional]
+[debug] == resolving dependencies for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT [runtime-internal]
+[debug] == resolving dependencies for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT [optional]
 [debug] resolving dependencies for configuration 'test-internal'
-[debug] == resolving dependencies for default#slickbasicexamples-build;0.1-SNAPSHOT [test-internal]
-[debug] == resolving dependencies for default#slickbasicexamples-build;0.1-SNAPSHOT [test]
-[debug] == resolving dependencies for default#slickbasicexamples-build;0.1-SNAPSHOT [runtime]
-[debug] == resolving dependencies for default#slickbasicexamples-build;0.1-SNAPSHOT [compile]
-[debug] == resolving dependencies for default#slickbasicexamples-build;0.1-SNAPSHOT [optional]
-[debug] == resolving dependencies for default#slickbasicexamples-build;0.1-SNAPSHOT [provided]
-[debug] == resolving dependencies default#slickbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->default(compile)]
+[debug] == resolving dependencies for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT [test-internal]
+[debug] == resolving dependencies for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT [test]
+[debug] == resolving dependencies for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT [optional]
+[debug] == resolving dependencies for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT [provided]
+[debug] == resolving dependencies default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
@@ -3770,10 +3770,10 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
-[debug] == resolving dependencies default#slickbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->runtime]
-[debug] == resolving dependencies default#slickbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->compile]
-[debug] == resolving dependencies default#slickbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->master]
-[debug] == resolving dependencies default#slickbasicexamples-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.13 [provided->default(compile)]
+[debug] == resolving dependencies default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->runtime]
+[debug] == resolving dependencies default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->compile]
+[debug] == resolving dependencies default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->master]
+[debug] == resolving dependencies default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.13 [provided->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
@@ -5870,20 +5870,20 @@
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {provided=[default(compile)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {provided=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[default(compile)]}
 [debug] resolving dependencies for configuration 'plugin'
-[debug] == resolving dependencies for default#slickbasicexamples-build;0.1-SNAPSHOT [plugin]
+[debug] == resolving dependencies for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT [plugin]
 [debug] resolving dependencies for configuration 'sources'
-[debug] == resolving dependencies for default#slickbasicexamples-build;0.1-SNAPSHOT [sources]
+[debug] == resolving dependencies for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT [sources]
 [debug] resolving dependencies for configuration 'docs'
-[debug] == resolving dependencies for default#slickbasicexamples-build;0.1-SNAPSHOT [docs]
+[debug] == resolving dependencies for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT [docs]
 [debug] resolving dependencies for configuration 'pom'
-[debug] == resolving dependencies for default#slickbasicexamples-build;0.1-SNAPSHOT [pom]
+[debug] == resolving dependencies for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT [pom]
 [debug] resolving dependencies for configuration 'scala-tool'
-[debug] == resolving dependencies for default#slickbasicexamples-build;0.1-SNAPSHOT [scala-tool]
-[debug] == resolving dependencies default#slickbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.6 [scala-tool->default]
+[debug] == resolving dependencies for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT [scala-tool]
+[debug] == resolving dependencies default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.6 [scala-tool->default]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.10.6 {scala-tool=[default, optional(default)], provided=[default(compile)]}
-[debug] == resolving dependencies default#slickbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.6 [scala-tool->runtime]
-[debug] == resolving dependencies default#slickbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.6 [scala-tool->compile]
+[debug] == resolving dependencies default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.6 [scala-tool->runtime]
+[debug] == resolving dependencies default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.6 [scala-tool->compile]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-reflect;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#jline;2.10.6 {optional=[compile(*), master(*)]} => dependency: org.scala-lang#jline;2.10.6 {optional=[compile(*), master(*)]}
@@ -5949,14 +5949,14 @@
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
 [debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.6->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.6->org.scala-lang#scala-library;2.10.6 [runtime->compile]
-[debug] == resolving dependencies default#slickbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.6 [scala-tool->master]
+[debug] == resolving dependencies default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.6 [scala-tool->master]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-reflect;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#jline;2.10.6 {optional=[compile(*), master(*)]} => dependency: org.scala-lang#jline;2.10.6 {optional=[compile(*), master(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-reflect;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#jline;2.10.6 {optional=[compile(*), master(*)]} => dependency: org.scala-lang#jline;2.10.6 {optional=[compile(*), master(*)]}
-[debug] == resolving dependencies default#slickbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.6 [scala-tool->optional(default)]
+[debug] == resolving dependencies default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.6 [scala-tool->optional(default)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-reflect;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#jline;2.10.6 {optional=[compile(*), master(*)]} => dependency: org.scala-lang#jline;2.10.6 {optional=[compile(*), master(*)]}
@@ -6012,11 +6012,11 @@
 [debug] sbt-chain: module revision found in cache: org.fusesource.jansi#jansi;1.4
 [debug] 	found org.fusesource.jansi#jansi;1.4 in sbt-chain
 [debug] == resolving dependencies org.scala-lang#jline;2.10.6->org.fusesource.jansi#jansi;1.4 [compile->compile(*)]
-[debug] == resolving dependencies default#slickbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->default]
-[debug] == resolving dependencies default#slickbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->runtime]
-[debug] == resolving dependencies default#slickbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->compile]
-[debug] == resolving dependencies default#slickbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->master]
-[debug] == resolving dependencies default#slickbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->optional(default)]
+[debug] == resolving dependencies default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->default]
+[debug] == resolving dependencies default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->runtime]
+[debug] == resolving dependencies default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->compile]
+[debug] == resolving dependencies default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->master]
+[debug] == resolving dependencies default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->optional(default)]
 [debug] ignoring unhandled DependencyDescriptorMediator: class sbt.IvyScala$OverrideScalaMediator
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
@@ -6074,19 +6074,19 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#template-resolver;0.1!template-resolver.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.6!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 859ms :: artifacts dl 17ms
-[debug] 	report for default#slickbasicexamples-build;0.1-SNAPSHOT compile produced in /home/aamir/Sources/SlickBasicExamples/project/target/resolution-cache/reports/default-slickbasicexamples-build-compile.xml
-[debug] 	report for default#slickbasicexamples-build;0.1-SNAPSHOT runtime produced in /home/aamir/Sources/SlickBasicExamples/project/target/resolution-cache/reports/default-slickbasicexamples-build-runtime.xml
-[debug] 	report for default#slickbasicexamples-build;0.1-SNAPSHOT test produced in /home/aamir/Sources/SlickBasicExamples/project/target/resolution-cache/reports/default-slickbasicexamples-build-test.xml
-[debug] 	report for default#slickbasicexamples-build;0.1-SNAPSHOT provided produced in /home/aamir/Sources/SlickBasicExamples/project/target/resolution-cache/reports/default-slickbasicexamples-build-provided.xml
-[debug] 	report for default#slickbasicexamples-build;0.1-SNAPSHOT optional produced in /home/aamir/Sources/SlickBasicExamples/project/target/resolution-cache/reports/default-slickbasicexamples-build-optional.xml
-[debug] 	report for default#slickbasicexamples-build;0.1-SNAPSHOT compile-internal produced in /home/aamir/Sources/SlickBasicExamples/project/target/resolution-cache/reports/default-slickbasicexamples-build-compile-internal.xml
-[debug] 	report for default#slickbasicexamples-build;0.1-SNAPSHOT runtime-internal produced in /home/aamir/Sources/SlickBasicExamples/project/target/resolution-cache/reports/default-slickbasicexamples-build-runtime-internal.xml
-[debug] 	report for default#slickbasicexamples-build;0.1-SNAPSHOT test-internal produced in /home/aamir/Sources/SlickBasicExamples/project/target/resolution-cache/reports/default-slickbasicexamples-build-test-internal.xml
-[debug] 	report for default#slickbasicexamples-build;0.1-SNAPSHOT plugin produced in /home/aamir/Sources/SlickBasicExamples/project/target/resolution-cache/reports/default-slickbasicexamples-build-plugin.xml
-[debug] 	report for default#slickbasicexamples-build;0.1-SNAPSHOT sources produced in /home/aamir/Sources/SlickBasicExamples/project/target/resolution-cache/reports/default-slickbasicexamples-build-sources.xml
-[debug] 	report for default#slickbasicexamples-build;0.1-SNAPSHOT docs produced in /home/aamir/Sources/SlickBasicExamples/project/target/resolution-cache/reports/default-slickbasicexamples-build-docs.xml
-[debug] 	report for default#slickbasicexamples-build;0.1-SNAPSHOT pom produced in /home/aamir/Sources/SlickBasicExamples/project/target/resolution-cache/reports/default-slickbasicexamples-build-pom.xml
-[debug] 	report for default#slickbasicexamples-build;0.1-SNAPSHOT scala-tool produced in /home/aamir/Sources/SlickBasicExamples/project/target/resolution-cache/reports/default-slickbasicexamples-build-scala-tool.xml
-[debug] 	resolve done (859ms resolve - 17ms download)
+[debug] :: resolution report :: resolve 795ms :: artifacts dl 27ms
+[debug] 	report for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT compile produced in /home/aamir/IntW/SlickAkkaHttpBasicExamples/project/target/resolution-cache/reports/default-slickakkahttpbasicexamples-build-compile.xml
+[debug] 	report for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT runtime produced in /home/aamir/IntW/SlickAkkaHttpBasicExamples/project/target/resolution-cache/reports/default-slickakkahttpbasicexamples-build-runtime.xml
+[debug] 	report for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT test produced in /home/aamir/IntW/SlickAkkaHttpBasicExamples/project/target/resolution-cache/reports/default-slickakkahttpbasicexamples-build-test.xml
+[debug] 	report for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT provided produced in /home/aamir/IntW/SlickAkkaHttpBasicExamples/project/target/resolution-cache/reports/default-slickakkahttpbasicexamples-build-provided.xml
+[debug] 	report for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT optional produced in /home/aamir/IntW/SlickAkkaHttpBasicExamples/project/target/resolution-cache/reports/default-slickakkahttpbasicexamples-build-optional.xml
+[debug] 	report for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT compile-internal produced in /home/aamir/IntW/SlickAkkaHttpBasicExamples/project/target/resolution-cache/reports/default-slickakkahttpbasicexamples-build-compile-internal.xml
+[debug] 	report for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT runtime-internal produced in /home/aamir/IntW/SlickAkkaHttpBasicExamples/project/target/resolution-cache/reports/default-slickakkahttpbasicexamples-build-runtime-internal.xml
+[debug] 	report for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT test-internal produced in /home/aamir/IntW/SlickAkkaHttpBasicExamples/project/target/resolution-cache/reports/default-slickakkahttpbasicexamples-build-test-internal.xml
+[debug] 	report for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT plugin produced in /home/aamir/IntW/SlickAkkaHttpBasicExamples/project/target/resolution-cache/reports/default-slickakkahttpbasicexamples-build-plugin.xml
+[debug] 	report for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT sources produced in /home/aamir/IntW/SlickAkkaHttpBasicExamples/project/target/resolution-cache/reports/default-slickakkahttpbasicexamples-build-sources.xml
+[debug] 	report for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT docs produced in /home/aamir/IntW/SlickAkkaHttpBasicExamples/project/target/resolution-cache/reports/default-slickakkahttpbasicexamples-build-docs.xml
+[debug] 	report for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT pom produced in /home/aamir/IntW/SlickAkkaHttpBasicExamples/project/target/resolution-cache/reports/default-slickakkahttpbasicexamples-build-pom.xml
+[debug] 	report for default#slickakkahttpbasicexamples-build;0.1-SNAPSHOT scala-tool produced in /home/aamir/IntW/SlickAkkaHttpBasicExamples/project/target/resolution-cache/reports/default-slickakkahttpbasicexamples-build-scala-tool.xml
+[debug] 	resolve done (795ms resolve - 27ms download)
 [info] Done updating.

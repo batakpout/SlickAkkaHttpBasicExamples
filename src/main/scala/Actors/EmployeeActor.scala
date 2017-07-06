@@ -10,4 +10,5 @@ trait EmployeeActor extends ReactoreActors with CoreActorSystem with RootSupervi
    override implicit def system: ActorSystem = ActorSystemContainer.system
 
   val employeeActor = createRouters(Props(classOf[EmployeeService], ImplEmployeeRepository), availableProcessors)
+
 }

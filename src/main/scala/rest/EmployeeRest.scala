@@ -22,10 +22,9 @@ class EmployeeRest(actorRef: ActorRef, controller: EmployeeControllerComponent) 
       entity(as[String]) { data =>
         complete {
           controller.insertEmployeeController(actorRef, data).map { result =>
-             result map { finalResult =>
-               HttpResponse(status = StatusCodes.OK, entity = HttpEntity(MediaTypes.`application/json`, compact(Extraction.decompose(finalResult))))
-             }
-
+            result map { finalResult =>
+              HttpResponse(status = StatusCodes.OK, entity = HttpEntity(MediaTypes.`application/json`, compact(Extraction.decompose(finalResult))))
+            }
           }
         }
       }

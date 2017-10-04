@@ -50,7 +50,13 @@ class EmployeeRest(actorRef: ActorRef, controller: EmployeeControllerComponent) 
           ImplEmployeeRepository.updateEmployee(id, dd).map { result =>
             HttpResponse(status = StatusCodes.OK, entity = HttpEntity(MediaTypes.`application/json`, compact(Extraction.decompose(result))))
           }
-        }
+        }/*recover {
+            case ex => val (statusCode, message) = handleErrorMessages(ex)
+              if (statusCode == StatusCodes.NoContent)
+                HttpResponse(status = statusCode)
+              else
+                HttpResponse(status = statusCode, entity = HttpEntity(MediaTypes.`application/json`, message.asJson))
+          }*/
       }
     }
   } ~ pathPrefix("employeeByName") {
@@ -65,4 +71,26 @@ class EmployeeRest(actorRef: ActorRef, controller: EmployeeControllerComponent) 
       }
     }
   }
+  
+  /*
+   def handleErrorMessages(ex: Throwable) = {
+    ex.printStackTrace()
+
+    ex match {
+      case cmd: DuplicateEntityException => {
+        //logger.error("Exception occurred. " + stackTraceAsString(cmd.exception))
+         (StatusCodes.Conflict, ErrorMessageContainer(cmd.message))
+      }
+  
+  }}
+  case class DuplicateNameException(errorCode:String = ErrorCodes.DUPLICATE_NAME, message:String = ErrorMessages.DUPLICATE_NAME, exception:Throwable) extends ReactoreException
+object ErrorCodes {
+  val DUPLICATE_NAME:String = "1000"
+  }
+  object ErrorMessages {
+   val DUPLICATE_NAME:String = "Duplicate Name"
+   }
+   case class ErrorMessageContainer(message: String, ex: Option[String] = None, code: String = "")
+
+  */
 }

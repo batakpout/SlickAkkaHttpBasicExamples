@@ -19,6 +19,8 @@ class EmployeeRest(actorRef: ActorRef, controller: EmployeeControllerComponent) 
   implicit val f = DefaultFormats
   val routes = path("employee") {
     post {
+       headerValueByName("apiKey") { token =>
+        authorize(validateApiKey(token)) {
       entity(as[String]) { data =>
         complete {
           controller.insertEmployeeController(actorRef, data).map { result =>
@@ -28,6 +30,8 @@ class EmployeeRest(actorRef: ActorRef, controller: EmployeeControllerComponent) 
           }
         }
       }
+        }
+       }
     } ~ get {
       complete {
         ImplEmployeeRepository.getAll.map { result =>
@@ -71,7 +75,13 @@ class EmployeeRest(actorRef: ActorRef, controller: EmployeeControllerComponent) 
       }
     }
   }
-  
+  /*
+    def validateApiKey(apiKey: String): Boolean = {
+    val apiKeysJson = ConfigFactory.load().getString("apiKeys").trim
+    val apiKeys = extractEntityWithTry[ApiKeys](apiKeysJson).getOrElse(ApiKeys(List()))
+    if (apiKeys.values.contains(apiKey)) true else false
+  }
+  */
   /*
    def handleErrorMessages(ex: Throwable) = {
     ex.printStackTrace()

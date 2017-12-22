@@ -7,6 +7,7 @@ import akka.actor.{ActorRef, ActorSystem}
 import akka.http.scaladsl.model.{HttpEntity, HttpResponse, MediaTypes, StatusCodes}
 import akka.http.scaladsl.server.Directives
 import akka.stream.ActorMaterializer
+import com.typesafe.config.ConfigFactory
 import org.json4s.{DefaultFormats, Extraction}
 import org.json4s.jackson.JsonMethods._
 
@@ -75,25 +76,26 @@ class EmployeeRest(actorRef: ActorRef, controller: EmployeeControllerComponent) 
       }
     }
   }
-  /*
+
     def validateApiKey(apiKey: String): Boolean = {
     val apiKeysJson = ConfigFactory.load().getString("apiKeys").trim
-    val apiKeys = extractEntityWithTry[ApiKeys](apiKeysJson).getOrElse(ApiKeys(List()))
-    if (apiKeys.values.contains(apiKey)) true else false
+    val apiKeys = Nil//extractEntityWithTry[ApiKeys](apiKeysJson).getOrElse(ApiKeys(List()))
+    //if (apiKeys.values.contains(apiKey)) true else false
+    if (apiKeys.contains(apiKey)) true else false
   }
-  */
-  /*
+
+/*
    def handleErrorMessages(ex: Throwable) = {
     ex.printStackTrace()
 
     ex match {
-      case cmd: DuplicateEntityException => {
+      case cmd: DuplicateNameException => {
         //logger.error("Exception occurred. " + stackTraceAsString(cmd.exception))
          (StatusCodes.Conflict, ErrorMessageContainer(cmd.message))
       }
   
   }}
-  case class DuplicateNameException(errorCode:String = ErrorCodes.DUPLICATE_NAME, message:String = ErrorMessages.DUPLICATE_NAME, exception:Throwable) extends ReactoreException
+  case class DuplicateNameException(errorCode:String = ErrorCodes.DUPLICATE_NAME, message:String = ErrorMessages.DUPLICATE_NAME, exception:Throwable)
 object ErrorCodes {
   val DUPLICATE_NAME:String = "1000"
   }
@@ -101,6 +103,7 @@ object ErrorCodes {
    val DUPLICATE_NAME:String = "Duplicate Name"
    }
    case class ErrorMessageContainer(message: String, ex: Option[String] = None, code: String = "")
+*/
 
-  */
+
 }

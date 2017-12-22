@@ -17,7 +17,7 @@ trait CoreActorSystem {
 
 trait RootSupervisorHelper {
   self: CoreActorSystem =>
-  lazy val rootSupervisor = system.actorOf(Props[RootSupervisor]/*, Constants.REACTORE_SERVICE_SUPERVISOR_ACTOR_NAME*/)
+  lazy val rootSupervisor = system.actorOf(Props[RootSupervisor]/**/)
 }
 trait BaseActor extends Actor  {
 
@@ -77,7 +77,7 @@ class RootSupervisor extends BaseActor {
   }
 }
 
-trait ReactoreActors {
+trait GeneralActors {
   self: RootSupervisorHelper =>
 
   val availableProcessors = 1 //Runtime.getRuntime.availableProcessors
@@ -157,5 +157,5 @@ object ActorHelper {
 }
 
 object ActorSystemContainer  {
-  lazy val system: ActorSystem =  ActorSystem("ReactorActorSystem")
+  lazy val system: ActorSystem =  ActorSystem("GeneralActorSystem")
 }

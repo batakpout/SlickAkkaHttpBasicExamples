@@ -81,7 +81,8 @@ class EmployeeRest(actorRef: ActorRef, controller: EmployeeControllerComponent) 
     val apiKeysJson = ConfigFactory.load().getString("apiKeys").trim
     val apiKeys = Nil//extractEntityWithTry[ApiKeys](apiKeysJson).getOrElse(ApiKeys(List()))
     //if (apiKeys.values.contains(apiKey)) true else false
-    if (apiKeys.contains(apiKey)) true else false
+    //f (apiKeys.contains(apiKey)) true else false
+      true
   }
 
 /*

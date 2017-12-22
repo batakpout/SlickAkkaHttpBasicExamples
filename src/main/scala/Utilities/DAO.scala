@@ -72,7 +72,7 @@ abstract class BaseRepository[T <: BaseTable[E], E <: BaseEntity : ClassTag](cla
   lazy val clazzEntity = classTag[E].runtimeClass
   val query: slick.jdbc.PostgresProfile.api.type#TableQuery[T] = clazz
   val user = "postgres"
-  val url = "jdbc:postgresql://localhost:5432/learning"
+  val url = "jdbc:postgresql://192.168.1.134:5432/learning" //learning is schema inside learning db, find db script in app.conf
   val password = "admin"
   val driver = "org.postgresql.Driver"
 
@@ -107,3 +107,4 @@ abstract class BaseRepository[T <: BaseTable[E], E <: BaseEntity : ClassTag](cla
   }
 
 }
+

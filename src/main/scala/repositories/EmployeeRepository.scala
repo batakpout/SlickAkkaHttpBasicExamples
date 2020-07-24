@@ -1,26 +1,21 @@
-package Utilities
+package repositories
 
-import Entities.{Employee, EmployeeTable}
-import slick.lifted.TableQuery
-import scala.concurrent.ExecutionContext.Implicits.global
+import Entities.Employee
+
 import scala.concurrent.Future
 
-abstract class EmployeeRepository
-  extends BaseRepository[EmployeeTable, Employee](TableQuery[EmployeeTable]) {
-
-  // Employee(0L, "aamir", false)
+abstract class EmployeeRepository {
 
   def insertItem(row: Employee): Future[Employee] = {
-    val res = super.save(row)
-    res.map(x => println(x + ">>>>>>>>>>>>>>>>>"))
-    res
+    Future.successful(row)
   }
 
   def getEmployees = {
-    super.getAll
+    //super.getAll
+    Future.successful(Seq(Employee(1, "obaid", false)))
   }
 
-  def deleteRecord(id: Long) = {
+  /*def deleteRecord(id: Long) = {
     super.deleteById(id)
   }
 
@@ -33,7 +28,7 @@ abstract class EmployeeRepository
       employees <- super.getAll
       result = employees.filter(_.firstName.equalsIgnoreCase(name))
     } yield result
-  }
+  }*/
 
 }
 

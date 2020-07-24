@@ -1,7 +1,0 @@
-CREATE TABLE learning."Employee"
-(
-  "EmployeeId" bigserial NOT NULL,
-  "FirstName" character varying,
-  "IsDeleted" boolean,
-  CONSTRAINT "Employee_pkey" PRIMARY KEY ("EmployeeId")
-)

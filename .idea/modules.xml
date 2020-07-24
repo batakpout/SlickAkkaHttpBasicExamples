@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/slickakkahttpbasicexamples.iml" filepath="$PROJECT_DIR$/.idea/modules/slickakkahttpbasicexamples.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/slickakkahttpbasicexamples-build.iml" filepath="$PROJECT_DIR$/.idea/modules/slickakkahttpbasicexamples-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MyProject.iml" filepath="$PROJECT_DIR$/.idea/modules/MyProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MyProject-build.iml" filepath="$PROJECT_DIR$/.idea/modules/MyProject-build.iml" />
     </modules>
   </component>
 </project>
